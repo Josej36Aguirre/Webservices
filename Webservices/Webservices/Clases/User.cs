@@ -6,5 +6,6 @@ namespace Webservices.Clases
 {
     class User
     {
+        public string Nombre { get; set; }
     }
 }
