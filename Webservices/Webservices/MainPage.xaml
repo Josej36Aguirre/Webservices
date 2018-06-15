@@ -8,4 +8,19 @@
         <Button x:Name="btn1" Text="Consultar Usuarios"></Button>
     </StackLayout>
 
+    <ListView x:Name="lstUsuarios">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <Label Text="{Binding codigo}"/>
+                        <Label Text="{Binding nombre}"/>
+                        <Label Text="{Binding correo}"/>
+
+                    </StackLayout>                            
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
 </ContentPage>
