@@ -6,13 +6,13 @@
 
     <StackLayout Orientation="Vertical">
         <Button x:Name="btn1" Text="Consultar Usuarios"></Button>
-    </StackLayout>
+  
 
     <ListView x:Name="lstUsuarios">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <StackLayout>
+                    <StackLayout Orientation="Horizontal">
                         <Label Text="{Binding codigo}"/>
                         <Label Text="{Binding nombre}"/>
                         <Label Text="{Binding correo}"/>
@@ -22,5 +22,6 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
+    </StackLayout>
 
 </ContentPage>
