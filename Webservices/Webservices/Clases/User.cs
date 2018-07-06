@@ -8,8 +8,10 @@ namespace Webservices.Clases
     {
         public int codigo { get; set; }
         public string Nombre { get; set; }
-        public int edad { get; set; }
-        public string correo { get; set; }
-        public string pas { get; set; }
+        public string Marca { get; set; }
+        public decimal Contenido { get; set; }
+        public decimal Valor { get; set; }
+        public decimal Descuento { get; set; }
+        public string Imagen { get; set; }
     }
 }
