@@ -13,12 +13,18 @@
             <DataTemplate>
                 <ViewCell>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding Codigo}"/>
-                        <Label Text="{Binding Nombre}"/>
-                        <Label Text="{Binding Marca}"/>
-                        <Label Text="{Binding Contenido}"/>
-                        <Label Text="{Binding Valor}"/>
-                        <Label Text="{Binding Descuento}"/>
+							<Label Text="Codigo:" TextColor="DarkMagenta"/>
+							<Label Text="{Binding Codigo}"/>
+							<Label Text="Nombre: " TextColor="DarkMagenta"/>
+							<Label Text="{Binding Nombre}"/>
+							<Label Text="Marca:" TextColor="DarkMagenta"/>
+							<Label Text="{Binding Marca}"/>
+							<Label Text="Contenido" TextColor="DarkMagenta"/>
+							<Label Text="{Binding Contenido}"/>
+							<Label Text="Valor" TextColor="DarkMagenta"/>
+							<Label Text="{Binding Valor}"/>
+							<Label Text="Descuento" TextColor="DarkMagenta"/>
+							<Label Text="{Binding Descuento}"/>
                         <Image Source="{Binding Imagen}"/>
 
                         </StackLayout>                            
