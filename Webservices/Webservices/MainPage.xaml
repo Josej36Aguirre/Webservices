@@ -3,35 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Webservices"
              x:Class="Webservices.MainPage">
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+           
+            <Button x:Name="btn1" 
+                    Text="Ver Promociones"
+                    BackgroundColor="Aquamarine"></Button>
+       
+       
+                
+                <ListView x:Name="lstUsuarios" 
+                    HasUnevenRows="True"
+                      ItemTapped="Promociones_item"
+                    RowHeight="100" 
+                          BackgroundColor="Bisque">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell ImageSource="{Binding Imagen}" Detail="{Binding Valor}" Text="{Binding Nombre}" BindingContext="{Binding Marca}" />
+                           
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+           
+   
 
-    <StackLayout Orientation="Vertical">
-        <Button x:Name="btn1" Text="Consultar Usuarios"></Button>
-  
-
-    <ListView x:Name="lstUsuarios">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <StackLayout Orientation="Horizontal">
-							<Label Text="Codigo:" TextColor="DarkMagenta"/>
-							<Label Text="{Binding Codigo}"/>
-							<Label Text="Nombre: " TextColor="DarkMagenta"/>
-							<Label Text="{Binding Nombre}"/>
-							<Label Text="Marca:" TextColor="DarkMagenta"/>
-							<Label Text="{Binding Marca}"/>
-							<Label Text="Contenido" TextColor="DarkMagenta"/>
-							<Label Text="{Binding Contenido}"/>
-							<Label Text="Valor" TextColor="DarkMagenta"/>
-							<Label Text="{Binding Valor}"/>
-							<Label Text="Descuento" TextColor="DarkMagenta"/>
-							<Label Text="{Binding Descuento}"/>
-                        <Image Source="{Binding Imagen}"/>
-
-                        </StackLayout>                            
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
     </StackLayout>
+
+    </ScrollView>
 
 </ContentPage>

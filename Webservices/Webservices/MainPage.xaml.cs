@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Webservices.Clases;
+using System.Globalization;
 namespace Webservices
 {
 	public partial class MainPage : ContentPage
@@ -31,6 +32,13 @@ namespace Webservices
 
                 throw;
             }
+        }
+        private async void Promociones_item(object sender, ItemTappedEventArgs e)
+        {
+            CultureInfo dolar = new CultureInfo("en-US");
+            var promocion = e.Item as User;
+           await DisplayAlert("Promociones", "Nombre: " + promocion.Nombre + "\n" + "Marca: " +promocion.Marca+ 
+               "\n" + "Contenido : " + promocion.Contenido+ " g/cm"+"\n"+"Valor: $"+promocion.Valor, "ok");
         }
     }
 }

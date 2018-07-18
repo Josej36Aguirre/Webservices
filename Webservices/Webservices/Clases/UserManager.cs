@@ -9,7 +9,7 @@ namespace Webservices.Clases
 {
     class UserManager
     {
-        const String URL = "http://192.168.0.105/SmartMarketWeb/index.php/Promocionescontroller/mostrar_movil";
+        const String URL = "http://192.168.0.102/SmartMarketWeb/index.php/Promocionescontroller/mostrar_movil";
         private HttpClient GetClient()
         {
             HttpClient client = new HttpClient();
